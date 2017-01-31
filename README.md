@@ -104,3 +104,10 @@ SELECT COUNT (DISTINCT application_id) AS apps_count
 FROM google_application_ranks
 WHERE rank BETWEEN 1 AND 10;
 
+7-How many times each distinct app has been among the top 10?
+
+SELECT DISTINCT application_id, COUNT (DISTINCT application_id)
+FROM google_application_ranks
+GROUP BY application_id
+WHERE rank BETWEEN 1 AND 10;
+
