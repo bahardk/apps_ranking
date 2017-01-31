@@ -109,5 +109,5 @@ WHERE rank BETWEEN 1 AND 10;
 SELECT DISTINCT application_id, COUNT (DISTINCT application_id)
 FROM google_application_ranks
 GROUP BY application_id
-WHERE rank BETWEEN 1 AND 10;
+WHERE rank BETWEEN 1 AND 10;  (again I know it is wrong! :P)
 
